@@ -8,6 +8,22 @@ image = imread('image.jpg'); %getting the image
 level = graythresh(image); %computes the threshold level
 imageBW = im2bw(image, level); %this converts grayscale  image to binary given a threshold
 
+%Contour Tracing
+imageContour = bwboundaries(imageBW);
+numBoundaries = size(imageContour);
+
+%Show contour
+%subplot(1, 1, 1);
+%imshow(image, []);
+%title('Original Grayscale Image with Outlines');
+%hold on;
+
+%for k = 1 : numBoundaries
+%thisBoundary = imageContour{k};
+%plot(thisBoundary(:,2), thisBoundary(:,1), 'r', 'LineWidth', 2);
+%end
+%hold off;
+
 %Noise Removal
 invBW = ~imageBW;
 sq = ones(3,3);
@@ -105,7 +121,7 @@ while (ChangeCount ~= 0)
             end
         end
     end
-    ChangeCount % output # of changes this iteration
+    ChangeCount; % output # of changes this iteration
     % swap BWbuffer with BWchanged
     BWbuffer=BWchanged;
 end % end outer loop
