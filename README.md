@@ -1,8 +1,8 @@
-Intelligent-Systems-Character-Recognition
+Intelligent-Systems-Stock-Market-Trading
 =========================================
 
-Applying Genetic Algoritms in Multi Language Character Recognition 
+Applying Genetic Algoritms for Trading in Market toward Stable Profitable Method
 
-A MatLan application based off the work of Hanan Aljuaid - Faculty of Computer Science and Info System, Taif University, Taif, Saudi Arabia.
+A MatLab application based off the work of Tomio Kurokawa Aichi Institute of Technology, Japan.
 
-The paper can be found here [PDF] http://cdn.intechopen.com/pdfs-wm/33401.pdf
+The paper can be found here [PDF] http://cdn.intechopen.com/pdfs-wm/33405.pdf
