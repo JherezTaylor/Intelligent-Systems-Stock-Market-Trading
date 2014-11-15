@@ -17,13 +17,21 @@ function [ totalProfit, winningCount, winRate, totalProfitRate, averageProfitRat
 	totalProfit = 0;
 	totalProfitRate = 0;
 	winningCount = 0;
+  dayTracker = 0;
 
 	for i = 1 : N %loop through dataset with each chromosome
-		buyPrice = stockData(4); %selling
+		%create a boolean for when to init a buy or sell
+
+    buyPrice = stockData(4); %selling
 		sellPrice = stockData(5); %buying
 		tradeCount = stockData(6);
 
-		%profit(i) = sellPrice(i) - buyPrice(i
+		gene2 = decodeGene(chromosome(3,:),1,31);
+    gene3 = decodeGene(chromosome(4,:),0,100);
+    gene4 = decodeGene(chromosome(5,:),0,100);
+    gene5 = decodeGene(chromosome(6,:),0,100);
+
+    %profit(i) = sellPrice(i) - buyPrice(i
 		profit =  sellPrice - buyPrice;
 
 		%TP = sum of the profit for the total trade count(N)
