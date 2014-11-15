@@ -9,9 +9,9 @@ function [ population ] = initPopulation(size)
 %   Gene4: minimum falling rate of price
 %   Gene5: maximum price level
     
-    population = zeros(size);
+    population = zeros(6,17,size);
     for i = 1 : size
-            population(i) = round(randi([0 1],6,17));
+            population(:,:,i) = round(randi([0 1],6,17));
     end
 end
 

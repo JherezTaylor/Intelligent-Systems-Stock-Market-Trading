@@ -1,5 +1,5 @@
 function [ result ] = decodeGene( bitString, x, y )
-%This function reutrns the real number representation of a gene
+%This function returns the real number representation of a gene
 %   Accepts the bit string and the range
 %   and returns the real number representation
 %   http://www.ise.ncsu.edu/fangroup/ie789.dir/IE789F_ch3.pdf
