@@ -6,12 +6,12 @@ function [ population ] = initPopulation(size)
 %   Gene1: maximum SP-minus change rate: SP%-
 %   Gene2: maximum number of days to hold bought stocks
 %   Gene3: minimum up rate to sell bought stocks
-%   Gene4: minimum down shooting
+%   Gene4: minimum falling rate of price
 %   Gene5: maximum price level
     
-    population = zeros(6,24,size);
+    population = zeros(size);
     for i = 1 : size
-            population(:,:,i) = round(randi([0 1],6,24));
+            population(i) = round(randi([0 1],6,17));
     end
 end
 
